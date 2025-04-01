@@ -1,0 +1,17 @@
+#
+# PDCItemSetter by 0guzok | https://github.com/0guz0k
+#
+messages:
+  reload: "&6&lPDCItemSetter &7reloaded.;chat"
+  usage:
+    - "&6&lUsage:"
+    - "  &7/pdc clear"
+    - "  &7/pdc set <name> <key> <value>"
+  no_permission: "&#ff4040You do not have permission to use this command.;action_bar"
+  only_player_can_use_command: "&#ff4040Only player can use this command.;chat"
+
+  item_in_hand_empty: "&8[&6&lPDC&8] &#ff4040You need to hold the item.;action_bar"
+  invalid_regex: "&8[&6&lPDC&8] &7Use &6[a-z0-9/._-] &7regex pattern to set the item data.;chat"
+  pdc_added: "&8[&6&lPDC&8] &7Successfully added data of item %item%;chat"
+  pdc_empty: "&8[&6&lPDC&8] &7Data of item %item% is empty;chat"
+  pdc_cleared: "&8[&6&lPDC&8] &7Successfully cleared all PDC data of item %item%;chat"
