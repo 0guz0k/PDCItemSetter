@@ -59,7 +59,7 @@ public class Commands implements CommandExecutor, TabCompleter {
 
                 for (NamespacedKey key : pdc.getKeys()) pdc.remove(key);
                 i.setItemMeta(m);
-                MessageUtils.sendMessage(player, PDCItemSetter.getInstance().getConfig().getString("messages.pdc_cleared").replace("%item%", m.getItemName()));
+                MessageUtils.sendMessage(player, PDCItemSetter.getInstance().getConfig().getString("messages.pdc_cleared").replace("%item%", i.getI18NDisplayName()));
                 return true;
             }
 
@@ -86,7 +86,7 @@ public class Commands implements CommandExecutor, TabCompleter {
 
                 m.getPersistentDataContainer().set(new NamespacedKey(namespace, valueKey), PersistentDataType.STRING, value);
                 i.setItemMeta(m);
-                MessageUtils.sendMessage(player, PDCItemSetter.getInstance().getConfig().getString("messages.pdc_added").replace("%item%", m.getItemName()));
+                MessageUtils.sendMessage(player, PDCItemSetter.getInstance().getConfig().getString("messages.pdc_added").replace("%item%", i.getI18NDisplayName()));
                 return true;
             }
 
